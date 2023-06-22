@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Nunito:wght@300&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+
+<title>Contact us</title>
+<style>
+*{padding:0; margin:0; user-select:none;}
+ .back{ background-image:url('/storage/emulated/0/Pictures/IMG_20230622_104348.jpg');
+  height:100vh; width:100vw; background-size:cover; background-position:center; background-color:rgb(16,0,25,0.1);
+  background-blend-mode:multiply; display:flex; align-items:center; justify-content:center;}
+  form{background:rgb(0,0,0,0.1); padding:20px;  border-radius:10px; backdrop-filter:blur(5px); font-family: 'Nunito', sans-serif;}
+  input{margin:5px 0px;  height:25px; text-align:left; padding:0 5px; color:white; outline:none;  font-size:20px;
+  background:rgb(0,0,0,0); border:none; border-bottom:1px solid black; font-family: 'Nunito', sans-serif;}
+  textarea{margin:5px 0px; width:95%; height:28vh;  text-align:center; padding:5px; resize:none; color:white;
+  outline:none; background:rgb(0,0,0,0); border:1px solid black; font-family: 'Nunito', sans-serif;  font-size:20px;}
+  ::placeholder{
+    color:white;
+  }
+  button{ background:rgb(212,46,90,1); color:white; padding:3px; width:100px; font-size:18px; position:relative; left:50%;
+  	border-radius:20px; transform:translateX(-50%); border:none; font-family: 'Nunito', sans-serif;
+  	}
+  button:hover{ border:none;  border:1px solid rgb(212,46,90,1);
+  background:rgb(0,0,0,0);}
+</style>
+</head>
+<body>
+<div class="back">
+	<form action="https://formspree.io/f/mayzzlyy"
+	method="POST">
+		<div><input id="name" type="text" placeholder="Name" ></div>
+		<div><input name="email" type="email" placeholder="E-mail" ></div>
+		<div><textarea name="message" placeholder="How Can We Help You ?"></textarea></div>
+		<div><button type="submit">Send</button></div>
+	</form>
+</div>
+</body>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+</html>

@@ -7,7 +7,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Nunito:wght@300&family=Roboto:wght@500&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
 
 <title>Contact us</title>
 <style>
@@ -28,6 +29,8 @@
   	}
   button:hover{ border:none;  border:1px solid rgb(212,46,90,1);
   background:rgb(0,0,0,0);}
+	#icon { margin:10px; color:#3b7be3;} a{text-decoration:none;}
+  #contact{ display:flex; justify-content:space-between; align-items:center;}
 </style>
 </head>
 <body>
@@ -38,6 +41,10 @@
 		<div><input name="email" type="email" placeholder="E-mail" ></div>
 		<div><textarea name="message" placeholder="How Can We Help You ?"></textarea></div>
 		<div><button type="submit">Send</button></div>
+		<div id="contact">
+		<a href="tel:+917381876799" ><i class="fa fa-phone" id="icon"></i></a>
+		<a href="mailto:technoharesh143@gmail.com" ><i class="fa fa-envelope" id="icon"></i></a>
+		</div>
 	</form>
 </div>
 </body>
